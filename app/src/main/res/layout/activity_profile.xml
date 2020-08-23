@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statuscolor">
+
+
+    <ImageView
+        android:id="@+id/user_profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="454dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/blank"
+
+        />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/eric_arrow_back_black_24dp" />
+
+    <TextView
+        android:id="@+id/user_profile_display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:paddingLeft="90dp"
+        android:paddingRight="20dp"
+        android:text="Display Name"
+        android:textColor="#ffffff"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/user_profile_current_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:paddingLeft="55dp"
+        android:text="Hii there I'm using Chattign app"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/user_profile_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="550dp"
+        android:text="Total Friends"
+        android:textColor="#ffffff"
+
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/user_profile_send_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/round_button"
+        android:elevation="50dp"
+        android:text="Send Friend Request"
+
+
+        />
+
+    <Button
+        android:id="@+id/user_profile_decline_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/round_normal"
+        android:elevation="20dp"
+        android:text="Decline Friend Request"
+
+
+        />
+
+
+</RelativeLayout>

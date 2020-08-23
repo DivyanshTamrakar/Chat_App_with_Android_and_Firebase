@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Registrationtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:titleTextColor="#ffffff"/>
+    
+
+
+    <LinearLayout
+        android:id="@+id/input_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Create A New Account"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Activity_displayname"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginTop="80dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_displayname"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:hint="Display Name"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textColor="#000000"
+                android:textColorHint="#a9a9a9"
+                android:textSize="20sp" />
+
+            />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_inputlayout_Email"
+            android:layout_width="340dp"
+
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_email"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:hint="Email"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#a9a9a9"
+                android:textSize="20sp" />
+
+            />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_password"
+            android:layout_width="340dp"
+
+
+            android:layout_height="70dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="30dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_password"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:textColor="#000000"
+                android:textColorHint="#a9a9a9"
+                android:textSize="20sp" />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            android:text="Sign up" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

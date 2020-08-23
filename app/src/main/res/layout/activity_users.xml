@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolor"
+    android:orientation="vertical"
+
+    tools:context=".UsersActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/active"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        app:navigationIcon="@drawable/ic_chevron_left_black_24dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="All Users"
+            android:textColor="@color/statuscolor"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+
+            android:id="@+id/tool_prof"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#a9a9a9"
+            app:civ_shadow_radius="3"
+            android:src="@drawable/blank" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/UserRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

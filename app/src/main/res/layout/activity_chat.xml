@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greycolor"
+    tools:context=".ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:titleTextColor="@color/whitecolor" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/whitecolor"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/text_user_lastseen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last seen"
+            android:textColor="@color/whitecolor"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+
+        android:id="@+id/tool_user_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/blank"
+        app:civ_border_color="#000000"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#a9a9a9"
+        app:civ_shadow_radius="3" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="676dp"
+
+
+        android:layout_marginTop="55dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="615dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="bottom"
+        android:minHeight="48dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/message_media"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_add_circle_black_24dp" />
+
+
+        <EditText
+            android:id="@+id/message_message"
+            android:layout_width="276dp"
+
+            android:layout_height="60dp"
+
+            android:background="@drawable/message"
+            android:hint="Type a message"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_weight="1"
+            android:textColor="#000000"
+
+            android:textColorHint="@color/greycolor" />
+
+        <ImageButton
+            android:id="@+id/message_send"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_send_black_24dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
